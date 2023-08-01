@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Righteous&family=Sarala:wght@400;700&display=swap');
+/*Puxa as fontes (vejo no google) que vou utilizar)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100;
+    background-color:rgba(0, 0, 0, 0.918); /*cor do fundo da página*/
+}
+
+.cabecalho { /*chamei a classe cabecalho do HEADER */
+    display: flex; /* comando para indicar que vou utilizar o felxbox*/ 
+    flex-direction: row; /* direção horizontal dos itens */
+    align-items: center; /* alinhamento central dos itens sentido horizontal*/
+    justify-content: space-around; /*distribuição dos itens referente as espaçamento entre eles */
+    padding: 24px; 
+}
+
+.cabecalho-imagem {
+    height: 62px;
+}
+
+.cabecalho-menu {
+    display:flex;  /* comando para indicar que vou utilizar o felxbox*/ 
+    gap: 52px;
+    cursor: pointer;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #a9a9a9a9;
+    font-weight: 600;
+}
+
+.conteudo {
+    margin-bottom: 48px; /*Cria uma distância da margem inferior (Entre o final do main e início do footer)*/
+    padding: 40px;
+    border-top: 2px solid grey;
+}
+
+.conteudo-principal{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column; /* este comando mantem os elementos alinhados na coluna */
+    gap: 25px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Permanent Marker', cursive;  /* Tipo de fonte*/
+    font-weight: 100; /* peso da fonte (negrito) */
+    font-size: 40px; /* tamanho da fonte */
+    color: #FFF2E7; /* cor da fonte */
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-size: 20px;
+    color: #a9a9a9a9;
+}
+
+.conteudo-principal-escrito-botao {
+/* personaliza a caixa do botão*/
+    background-color: burlywood;
+    border: none;
+    width: 200px;
+    height: 50px;
+    box-shadow:3px 4px 3px rgba(189, 121, 32, 0.493);
+    border-radius: 10px;
+
+/* personaliza o texto do botão*/
+    font-family:'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:rgb(58, 53, 53); 
+}
+.conteudo-principal-escrito-botao:hover {
+    background-color: rgba(236, 214, 196,0.53);
+    cursor: pointer;
+}
+
+.conteudo-principal-imagem {
+    height:300px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+    color: #a9a9a9ee;
+    margin-top: 50px;
+}
+.conteudo-secundario-titulo {
+    border-top: 2px solid grey;
+    font-family: 'Sarala', sans-serif;
+    font-size: 25px;
+    font-weight: 100px;
+    margin-bottom: 15px;
+    padding-top: 35px;
+    color: rgba(255, 238, 0, 0.925);
+}
+
+.conteudo-secundario-paragrafo {
+    font-family:'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 17px; 
+    color: #a9a9a9ee;
+}
+
+.detalhe {
+    color: burlywood;
+}
+
+.rodape {
+    border-top: 2px solid grey;
+}
+
+.rodape-imagem {
+    height: 90px;
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+}
